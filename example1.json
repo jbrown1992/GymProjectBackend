@@ -1,0 +1,40 @@
+﻿{
+  "name": "JB Day 1",
+  "exercises": [
+    {
+      "exerciseName": "Bench Press",
+      "sets": [
+        {
+          "reps": "10",
+          "kg": "70"
+        },
+        {
+          "reps": "8",
+          "kg": "70"
+        },
+        {
+          "reps": "6",
+          "kg": "70"
+        }
+      ]
+    },
+    {
+      "exerciseName": "Ez Bar Bicep Curl",
+      "sets": [
+        {
+          "reps": "12",
+          "kg": "36.5"
+        },
+        {
+          "reps": "10",
+          "kg": "36.5"
+        },
+        {
+          "reps": "8",
+          "kg": "36.5"
+        }
+      ]
+    }
+  ],
+  "dateTime": "2022-12-03T13:02:13.028Z"
+}

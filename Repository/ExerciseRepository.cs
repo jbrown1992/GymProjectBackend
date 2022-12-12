@@ -32,14 +32,24 @@ namespace GymProject.Repository
             }
         }
 
-        public Task DeleteExercise(int id)
+        public async Task DeleteExercise(int id)
         {
-            throw new NotImplementedException();
+            using (var connection = context.CreateConnection())
+            {
+
+                var sql = "delete from Exercise where Id = @Id";
+                var exercises = await connection.QueryAsync<Exercise>(sql, new { Id = id });
+            }
         }
 
-        public Task<Exercise> GetExercise(int? id)
+        public async Task<Exercise> GetExercise(int? id)
         {
-            throw new NotImplementedException();
+            using (var connection = context.CreateConnection())
+            {
+                var sql = "select * from Exercise where Id = @Id";
+                var exercise = await connection.QueryFirstAsync<Exercise>(sql, new { Id = id });
+                return exercise;
+            }
         }
 
         public Task UpdateExercise(int id, Exercise exercise)

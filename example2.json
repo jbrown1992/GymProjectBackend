@@ -1,0 +1,40 @@
+﻿{
+  "name": "JB Day 2",
+  "exercises": [
+    {
+      "exerciseName": "Squat",
+      "sets": [
+        {
+          "reps": "9",
+          "kg": "100"
+        },
+        {
+          "reps": "8",
+          "kg": "100"
+        },
+        {
+          "reps": "7",
+          "kg": "100"
+        }
+      ]
+    },
+    {
+      "exerciseName": "Overhead Press",
+      "sets": [
+        {
+          "reps": "7",
+          "kg": "55"
+        },
+        {
+          "reps": "6",
+          "kg": "55"
+        },
+        {
+          "reps": "5",
+          "kg": "55"
+        }
+      ]
+    }
+  ],
+  "dateTime": "2022-12-07T13:02:13.028Z"
+}

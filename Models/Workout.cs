@@ -4,7 +4,7 @@
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
-
         public List<ExerciseSet> Exercises { get; set; }
+        public DateTime DateTime { get; set; }
     }
 }

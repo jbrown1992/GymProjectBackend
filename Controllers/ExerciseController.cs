@@ -29,10 +29,23 @@ namespace GymProject.Controllers
             return Ok(await repository.GetExercises());
         }
 
+        [HttpGet("{id}")]
+        public async Task<ActionResult<List<Exercise>>> GetExercise(int id)
+        {
+            return Ok(await repository.GetExercise(id));
+        }
+
         [HttpPost]
         public async Task<ActionResult<List<Exercise>>> CreateExercise(Exercise exercise)
         {
             await repository.CreateExercise(exercise);
+            return Ok();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<List<Exercise>>> DeleteExercise(int id)
+        {
+            await repository.DeleteExercise(id);
             return Ok();
         }
     }
